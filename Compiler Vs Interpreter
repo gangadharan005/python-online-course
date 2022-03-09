@@ -1,9 +1,9 @@
          Basic for comparison                                  Compiler                                                                   interpreter
-                Input	                             It takes an entire program at a time                                   It takes a single line of code or instruction at a time
-                Output                                  It generates intermediate object code                                  It does not produce any intermediate object code
-                Speed                                   Comparatively faster	                                              Slower
-                Memory                                  Memory requirement is more due to the creation of object code	 It requires less memory as it does not create intermediate object code
-                Errors                                  Display all errors after compilation, all at the same time	          Displays error of each line one by one
-                Error detection	                    Difficult	                                                       Easier comparatively 
-         Pertaining Programming languages               C, C++, C#, Scala, typescript uses compiler	                   PHP, Perl, Python, Ruby uses an interpreter
+                Input	                             It takes an entire program at a time                                  It takes a single line of code or instruction at a time
+                Output                                  It generates intermediate object code                                 It does not produce any intermediate object code
+                Speed                                   Comparatively faster	                                             Slower
+                Memory                                  Memory requirement is more due to the creation of object code	It requires less memory as it does not create intermediate object code
+                Errors                                  Display all errors after compilation, all at the same time	         Displays error of each line one by one
+                Error detection	                    Difficult	                                                      Easier comparatively 
+         Pertaining Programming languages               C, C++, C#, Scala, typescript uses compiler	                  PHP, Perl, Python, Ruby uses an interpreter
   
