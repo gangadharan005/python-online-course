@@ -1,0 +1,147 @@
+===================================================================================================
+# Task-1 Identify the middle character of the string
+===========================================================================================
+str1 = input ("Enter the word:")
+middle_character = (len(str1)//2)
+print(str1[middle_character])
+======================================================================================
+# Task-2 strip concept
+===========================================================================================
+str1 = input("Enter the string:")
+print(str1.strip("*"))
+print(str1.rstrip("*"))
+print(str1.lstrip("*"))
+===============================================================================
+# Task-3 spilt concept
+===========================================================================================
+str1 = input("Enter the string and float value:")
+str2 = input("Enter the string and float value:")
+str3 = input("Enter the string and float value:")
+a = str1.split()
+b = str2.split()
+c = str3.split()
+float_value_1 = float(a[1])
+float_value_2 = float(b[1])
+float_value_3 = float(c[1])
+Total = float(float_value_1 + float_value_1 + float_value_3)
+print(Total)
+======================================================================================
+# Task-4
+#collect two strings from user
+string1: python
+String2: java
+output ===> jythonpava64hv
+=====================================================================================
+str1 = input("Enter the string1:")
+str2 = input("Enter the string2:")
+str3 = len(str1)
+str4 = len(str2)
+middle_character1 = (str3//2)
+middle_character2 = (str4//2)
+str5 = str2[0] + str1[1:]
+str6 = str1[0] + str2[1:]
+Result = str5 + str6 + str(str3) + str(str4) + str1[middle_character1] + str2[middle_character2]
+print(Result)
+=========================================================================================
+Task-4
+string1: maths
+string2: science
+output ===> sathsmcience57te
+========================================================================================
+str1 = input("Enter the string1:")
+str2 = input("Enter the string2:")
+str3 = len(str1)
+str4 = len(str2)
+middle_character1 = (str3//2)
+middle_character2 = (str4//2)
+str5 = str2[0] + str1[1:]
+str6 = str1[0] + str2[1:]
+Result = str5 + str6 + str(str3) + str(str4) + str1[middle_character1] + str2[middle_character2]
+print(Result)
+==============================================================================================
+Task-5
+Collect two strings from user
+string1: wikipedia
+string2: typescript
+output: p  +  c   ===> ascii value of p + ascii value of c  ====>  198
+(ord , chr)
+==========================================================================================
+str1 = input ("Enter the string1:")
+str2 = input("Enter the string2:")
+middle_character_1 = ((len(str1)//2))
+g = (str1[middle_character_1])
+print(g)
+middle_character_2 = ((len(str2)//2))
+h = (str2[middle_character_2])
+print(h)
+a = ord(g)
+print(a)
+b = ord(h)
+print(b)
+print("Addition of ascii value str1 and str2 is:", a + b)
+==============================================================================
+Task6:
+collect one string from user:
+string: computer
+output: c6r
+string: mathematics
+output: m9s
+=======================================================================
+str1 = input("Enter the string1:")
+str2 = len(str1[1:-1])
+str3 = str1[0]
+str4 = str1[-1]
+print(str3+str(str2)+str4)
+==========================================================================
+
+Hackerrank
+Task7
+Say hello world with python
+==================================================================
+string1 = input("Enter the string:")
+print(string1)
+================================================================
+Task 8
+swapcase
+=================================================================
+a = input("Enter the string:")
+print(a.swapcase())
+==================================================================
+Task9
+what;s your name
+====================================================================
+string1 = input("Enter your First Name:")
+string2 = input("Enter your Last Name:")
+print("HELLO",string1,string2,end="!")
+=======================================================================
+Task10:
+Mutation
+===============================================================================
+str1 = input("Enter the string1:") #: abracadabra
+a = list(str1)
+a[5] = 'k'
+str1 = ''.join(a)
+print(str1)  # output: abrackdabra
+# Another method
+str2 = input("Enter the string:") # input:prokram
+print(str2[:3] +"g" + str2[4:])   # output:program
+==================================================================================
+Task11:
+Arithmetic operator
+================================================================================
+a = int(input("Enter the number1:"))
+b = int(input("Enter the number2:"))
+print(a+b)
+print(a*b)
+print(a/b)
+print(a-b)
+=============================================================================
+Task-12
+python divison
+===========================================================================
+a = int(input("Enter the number1:"))
+b = int(input("Enter the number2:"))
+print(a/b)
+print(a//b)
+============================================================================
+
