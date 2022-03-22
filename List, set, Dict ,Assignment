@@ -1,0 +1,103 @@
+#List
+# Create an empty list (two ways)
+Li1 = []
+print(Li1)
+print(type(Li1))
+Li2 = list()
+print(Li2)
+print(type(Li2))
+==============================================================================================
+#Concatenate with [5,6,7,8]
+Li3 = list(input("Enter the list1:"))
+Li4 = list(input("Enter the list2:"))
+Li5 = Li3 + Li4
+print(Li5)
+============================================================================================
+# Find frequency of 8 (count)
+Li6 = [1,2,4,6,8,4,8,3,5,8,9,8]
+print(Li6.count(8))
+================================================================================
+# find the mean of the list
+Li7 = [1,2,3,4]
+Li8 = sum(Li7) / len(Li7)
+print(Li8)
+============================================================================
+# find sum (List) + min + Max
+Li9 = [1,2,3]
+Li10 = sum(Li9)
+Li11 = min(Li9)
+Li12 = max(Li9)
+Li13 = Li10 + Li11 + Li12
+print(Li13)  # output:10
+=======================================================================================
+# Find median of the list
+Li14 = [1,2,3,4,5,6,7,8]
+median = len(Li14) / 2
+print(round(median))
+====================================================================================
+#remove duplicates from list and give output in the format of tuple
+Li15 = {1,2,1,2,4,5,4,6,2,3,4,5,8}
+Li16 = tuple(Li15)
+print(Li16)
+===================================================================================================
+#add 8,9,1,5,6,7,8,1 elements to that list
+Li17 = [8,9,1,5,6,7,8,1]
+Li17[4] = 150
+print(Li17)
+=====================================================================================================
+#set
+# Create two empty sets
+s1 = set()
+s2 = set()
+print(type(s1))
+print(type(s2))
+================================================================
+# update set1 with 7,8,9,1,2,3,4,5,0
+# update set2 with 4,5,6,0
+# check whether set2 is subset of set1 or no ?
+# check whether both have common elements are no ?
+set1 = {7,8,9,1,2,3,4,5,0}
+set2 = {4,5,6,0}
+print(set2.issubset(set1))
+set3 =(set2.intersection(set1))
+print(set3)
+======================================================================
+# discard 0 from set1 and set2
+set4 = {7,8,9,1,2,3,4,5,0}
+set5 = {4,5,6,0}
+set4.discard(0)
+print(set4)
+set5.discard(0)
+print(set5)
+=======================================================================================
+# remove 8 from set 1 and set 2 ==> find the inferences
+set6 = {7,8,9,1,2,3,4,5,0}
+set7 = {4,5,6,0}
+set6.remove(8)
+print(set1)
+set7.remove(8)# key error:8
+print(set2)
+========================================================================================================
+#dictionary
+# create a dictionary
+d1 = {}
+print(type(d1))
+d2 = dict()
+print(type(d2))
+===================================================================================================
+
+# print all keys in dictionary and convert it into tuple
+d3 = {1:["english","maths","science"], 2:[10,20,30], 3:["bio-botany","bio-zoology","Algebra"]}
+d4 = d3.keys()
+print(d4)
+d5 = tuple(d4)
+print(d5)
+=============================================================================================================
+
+# Find the average of all numbers available under key "2"
+d6 = {1:["english","maths","science"], 2:[10,20,30], 3:["bio-botany","bio-zoology","Algebra"]}
+d7 = d6.get(2)
+print(d7)
+Average_value_of_key2 = sum(d7) / 3
+print(Average_value_of_key2)
+=========================================================================================================
