@@ -132,11 +132,12 @@ multiples of 8
 
 a = int(input("Enter the number1:"))
 b = int(input("Enter the number2:"))
+c = []
 for i in range(a,b):
     if i % 8 ==0:
-        print(f'{i} : Multiple of Eight')
-    else:
-        print(f'{i} : Not a Multiple of Eight')
+        c.append(i)
+print(c)
+
  ==========================================================================================================================
  #Task-5
 Li1 = [3,4,5,2,7,8,9,10]
@@ -169,13 +170,19 @@ Number nega: 3
 Number of zeros: 2
 
 Li2 = [-1, -7, 8, 10, 20, 21, 17, 28, -3, 0, 0, ]
+positive_elements = []
+negative_elements = []
+zero_elements = []
 for i in Li2:
     if i > 0:
-        print(f'postitive elements:{i}')
+        positive_elements.append(i)
+    elif i < 0:
+        negative_elements.append(i)
     elif i == 0:
-        print(f'Number of zero elements:{i}')
-    else:
-        print(f'NUmber of negative elements:{i}')
+        zero_elements.append(i)
+print(positive_elements)
+print(negative_elements)
+print(zero_elements)
 ==============================================================================================================================
 Task7:
 Study range function and for loop properly
