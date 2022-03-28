@@ -1,0 +1,136 @@
+# abs() - Returns the absolute value of a number
+a1 = int(input("Enter the number1: "))
+a2 = int(input("Enter the number2: "))
+a3 = a1 + a2                  # Enter the number1: 6
+a4 = abs(a3)                  # Enter the number2: -8
+print(a4)                     # 2
+=======================================================================================================
+# all() - Returns True if all items in an iterable object are true
+a5 = [1,0,0]
+a6 = [1,1,1]
+a7 = [0,0,0]
+a8 = all(a5)
+a9 = all(a6)
+a10 = all(a7)
+print(a8)
+print(a9)
+print(a10)
+==========================================================================================================================
+# any()  -	Returns True if any item in an iterable object is true
+a11 = [1,0,0,0,0]
+a12 = any(a11)
+print(a12)
+============================================================
+# ascii() - Returns a readable version of an object. Replaces none-ascii characters with escape character
+a13 = ascii("G®old")
+print(a13)
+======================================
+# bin() -	Returns the binary version of a number
+a14 = bin(9)
+print(a14)
+========================================
+# bool() - Returns the boolean value of the specified object
+a15 = True
+a16 = 0
+print(bool(a15))
+===========================
+print(bool(a16))
+# bytearray() -	Returns an array of bytes
+a17 = bytearray(8)
+print(a17)
+=========================================================
+#bytes() -	Returns a bytes object
+a18 = bytes(6)
+print(a18)
+==========================================================================
+# callable() -	Returns True if the specified object is callable, otherwise False
+def x():
+  a = 3
+print(callable(x))
+==================================================================================
+# chr() -	Returns a character from the specified Unicode code.
+a19 = chr(20)
+print(a19)
+=======================================================================
+# complex()	Returns a complex number
+a20 = complex(4,3)
+print(a20)
+===========================================================================
+# dict() -	Returns a dictionary (Array)
+a21 = dict(name =' raj',age = '10',Class ='5')
+print(a21)
+=================================================
+#float() - 	Returns a floating point number
+a22 = float(input("Enter the number:"))
+a23 = a22 * 5
+print(a23)
+=========================================================
+#format() -	Formats a specified value
+a24 = format(5,'b')
+print(a24)
+===========================================================
+# id()-	Returns the id of an object
+a25 = 5
+print(id(a25))
+===================================================================
+# input()-	Allowing user input
+a26 = input()
+print(a26)
+==========================================================
+# int()-	Returns an integer number
+a27 = 5.24 + 7.8888
+print(int(a27))
+===================================================
+# len()-	Returns the length of an object
+a28 = "hello"
+print(len(a28))
+=======================================================================
+# list()-	Returns a list
+a29 = int(input("Enter the numbers:"))
+a30 = [a29]
+print(a30)
+============================================================================
+# max()-	Returns the largest item in an iterable
+a31 = (3,4,6,34,56,)
+print(max(a31))
+==============================================================
+# min()-	Returns the smallest item in an iterable
+a32 = (3,0,-2,55)
+print(min(a32))
+==============================================================
+# oct()-	Converts a number into an octal
+a33 = oct(4)
+print(a33)
+==================================================
+# range() -	Returns a sequence of numbers, starting from 0 and increments by 1 (by default)
+a34 = range(5)
+for i in a34:
+  print(i)
+  ===========================================================
+# set()-	Returns a new set object
+a35 = set(('name','class','student'))
+print(a35)
+========================================================
+# str()-	Returns a string object
+a36 = str(55)
+print(a36)
+===========================================================
+# sum()-	Sums the items of an iterator
+a37 = (3,4,5,6)
+print(sum(a37))
+=============================================
+# tuple()-	Returns a tuple
+a38 = tuple(('hello','python','3.10.3'))
+print(a38)
+======================================================================
+# type()-	Returns the type of an object
+a39 = 5+9j
+print(type(a39))
+============================================================================
+# zip()  -	Returns an iterator, from two or more iterators
+a40 = 1,2,4
+a41 = 4,5,6
+a42 = zip(a40,a41)
+print(list(a42))
+=========================================================================================
+
