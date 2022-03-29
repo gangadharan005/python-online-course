@@ -1,0 +1,98 @@
+# Advance (7)
+# 1. whether the string is palindrome or not
+a1 = str(input("Enter the palindrome:"))
+while a1 == a1[::-1]:
+    print(a1, "palindrome")
+    break
+else:
+    print("not palindrome")
+ =======================================================================================================================
+
+# 2. whether the number is armstrong or not
+a2 = int(input("Enter the armstrong number:"))
+arm = 0
+a3 = a2
+while a3 > 0:
+    a4 = a3 % 10
+    arm = arm + (a4 * a4 * a4)
+    a3 = a3 // 10
+if a2 == arm:
+    print(a2, "armstrong")
+else:
+    print(a2, "not armstrong")
+================================================================================================
+# 3. whether the number is prime or not
+p = int(input("Enter the number:"))
+i = 2
+while i < p:
+    if p % i == 0:
+        print(p, "not prime number")
+        break
+    i = i + 1
+else:
+    print(p, "prime number")
+===========================================================================================================
+# 4. Find factorial of a number using function
+f = int(input("Enter the number:"))
+def factor(f):
+    if f < 0:
+        print('Factorial does not exist')
+        fact = 0
+        return fact
+    elif f == 0:
+        fact = 1
+        return fact
+        print(fact)
+    else:
+        fact = 1
+        for j in range(1, f + 1):
+            fact = fact * j
+        return fact
+print("The factorial of the number is ", factor(f))
+=====================================================================================================================
+
+# 5. Find factorial of a number using recursive function
+def factorial(x):
+    if x == 1:
+        return x
+    else:
+        return x * factorial(x - 1)
+
+print(factorial(5))
+print(factorial(1))
+print(factorial(4))
+
+===================================================================================================================
+
+# 6. Find factorial of a number without using function(for loop)
+num = int(input("Enter the factorial number:"))
+fact = 1
+if num < 0:
+    print("not eligible for negative numbers ")
+else :
+    for k in range(1,num+1):
+        fact = fact * k
+print("factorial number is",fact)
+
+# Find factorial of a number without using function(while loop)
+no = int(input("Enter the number:"))
+fact = no
+while no > 1:
+    no = no - 1
+    fact = fact * no
+print(fact)
+==========================================================================================================================
+# 7. Fibonacci series
+def Fibonacci(n):
+    if n < 0:
+        print("Incorrect input")
+    elif n == 0:
+        return 0
+    elif n == 1 or n == 2:
+        return 1
+    else:
+        return Fibonacci(n - 1) + Fibonacci(n - 2)
+print(Fibonacci(9))
+print(Fibonacci(6))
+
+
