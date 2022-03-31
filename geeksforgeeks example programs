@@ -1,0 +1,132 @@
+# Python program to add two numbers
+a1 = int(input("Enter the number1:"))
+a2 = int(input("Enter the number2:"))
+a3 = a1 + a2
+print("The sum of a1 and a2 is:",a3)
+==================================================================================================
+# Maximum of two numbers in Python
+a4 = int(input("Enter the number1:"))
+a5 = int(input("Enter the number2:"))
+a6 = max(a4,a5)
+print("The maximum number is:",a6)
+======================================================================================================
+# Python Program for factorial of a number
+def factorial (x):
+    if x == 0 or x == 1:
+        return 1
+    else:
+        return x*factorial(x-1)
+print(factorial(4))
+print(factorial(6))
+# Python Program for simple interest
+a7 = int(input("Enter the principal amount is:"))
+a8 = int(input("Enter the rate of interest is:"))
+a9 = int(input("Enter the units of time is:"))
+a10 = a7 * (a8/100) * a9
+print("The amount of simple Interest is:",a10)
+========================================================================================
+# Python Program for compound interest
+# A = P(1 + R/100) t
+# Compound Interest = A – P
+a11_P = float(input("Enter the principal amount is(p):"))
+a12_R = float(input("Enter the rate of interest is(R):"))
+a13_T = float(input("Enter the units of time is:"))
+a14_A = float(1 + a12_R / 100) ** a13_T
+print(a14_A)
+a15 = a11_P * a14_A
+print(a15)
+a16_C = a15 - a11_P
+print(a16_C)
+=============================================================================================================
+# Python Program to check Armstrong Number
+a17 = int(input("Enter the number:"))
+arm = 0
+a18 = a17
+while a18 > 0:
+    a19 = a18 % 10
+    arm = arm + (a19 * a19 * a19)
+    a18 = a18 // 10
+if a17 == arm:
+    print(a17,"An Armstrong number")
+else:
+    print(a17,"Not an armstrong number")
+================================================================================================================
+# Python Program for Program to find area of a circle
+pi = 3.14
+R = float(input("please enter radis(float value):"))
+Area = pi*(R*R)
+print(Area)
+print("The Area of circle is",float(Area))
+=============================================================================================================
+# Python program to print all Prime numbers in an Interval
+def primenumber(p1, p2):
+    p3 = []
+    for x in range(p1, p2):
+        if x == 0 or x == 1:
+            continue
+        else:
+            for y in range(2, int(x / 2) + 1):
+                if x % y == 0:
+                    break
+            else:
+                p3.append(x)
+    return p3
+p1 = int(input("Enter the starting number 1 and above:"))
+p2 = int(input("Enter the ending number:"))
+p4 = primenumber(p1, p2)
+if len(p4) == 0:
+    print("There are no prime numbers in this range")
+else:
+    print("The prime numbers in this range are: ", p4)
+    
+==============================================================================================    
+# Python program to check whether a number is Prime or not
+
+p = int(input("Enter the number:"))
+i = 2
+while i < p:
+    if p % i == 0:
+        print(p, "not prime number")
+        break
+    i = i + 1
+else:
+    print(p, "prime number")
+# Python Program for n-th Fibonacci number
+def Fibonacci(n):
+    if n < 0:
+        print("Incorrect input")
+    elif n == 0:
+        return 0
+    elif n == 1 or n == 2:
+        return 1
+    else:
+        return Fibonacci(n - 1) + Fibonacci(n - 2)
+print(Fibonacci(9))
+print(Fibonacci(6))
+=======================================================================================================
+# Program to print ASCII Value of a character
+a20 = str(input("Enter the letter:"))
+a21 = ord(a20)
+print(f"The ASCII value of {a20} is:",a21)
+=====================================================================================================
+# Python Program for Sum of squares of first n natural numbers
+
+def sum_squares(n1):
+    s = 0
+    for i in range(1,n1+1):
+        s += i * i
+    return s
+n1= int(input("Enter the number:"))
+print(sum_squares(n1))
+
+# Python Program for cube sum of first n natural numbers
+def cube_squares(n2):
+    c = 0
+    for i in range(1,n2+1):
+        c += i * i * i
+    return c
+n2= int(input("Enter the number:"))
+print(cube_squares(n2))
+==================================================================================================================================
+
+
