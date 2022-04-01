@@ -1,0 +1,56 @@
+# 1.Python program to check if a string is palindrome or not
+a1 = str(input("Enter the palindrome:"))
+while a1 == a1[::-1]:
+    print(a1, "palindrome")
+    break
+else:
+    print("not palindrome")
+    =============================================================================================================
+#2.Reverse words in a given String in Python
+a2 = "geeks quiz practice code"
+a3 = a2.split()
+print(a3)
+a4 = a3[::-1]
+print(a4)
+a5 = ' '.join(a4)
+print(a5)
+=============================================================================================================
+#3.Python | Check if a Substring is Present in a Given String
+a6 = "program"
+a7 = a6.find("g")
+print(a7)
+=====================================================================================================================
+# 4.Python – Convert Snake case to Pascal case
+# Input : geeks_for_geeks
+#  Output : GeeksforGeeks
+a8 = "geeks_for_geeks"
+a9 = a8.replace('_','')
+print(a9)
+a10 = a9.title()
+print(a10)
+===================================================================================================
+# 5.Find length of a string in python
+a11 = "hell0___python"
+print(len(a11))
+====================================================================================================
+# 6.Python | Count the Number of matching characters in a pair of string
+
+a12 = "Introduction of python program"
+a13 = a12.count('p')
+a14 = a12.count('g')
+print(a13)
+print(a14)
+===========================================================================================================
+# 7. Remove all duplicates from a given string in Python
+a15 = "geeksforgeeks"
+a16 = set(a15)
+print(a16)
+a17 = ' '.join(a16)
+print(a17)
+=======================================================================================================
+# 8.Python program to split and join a string
+a18 = input("Enter the string:-")
+a19 = a18.split(' ')
+print(a19)
+a20 = '_'.join(a19)
+print(a20)
