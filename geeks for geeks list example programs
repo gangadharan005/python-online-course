@@ -1,0 +1,167 @@
+# 1. Python program to interchange first and last elements in a list
+li1 = [12, 35, 9, 56, 24]
+li1[0] = 24
+li1[4] = 12
+print(li1)
+============================================================================
+# 2. Python program to swap two elements in a list
+li2 = [23, 65, 19, 90]
+li3 = [1, 2, 3, 4, 5]
+li2[2] = 23
+li2[0] = 19
+li3[1] = 5
+li3[4] = 2
+print(li2)
+print(li3)
+==============================================================================================
+# 3. Python | Ways to find length of list
+li4 = [1,2,3,4,5,]
+li5 = (len(li4))
+print("The length of given list is",li5)
+========================================================================================
+
+# 4. Python | Ways to check if element exists in list
+li6 = [1,2,5,6,3]
+print(li6.index(3))
+print(li6.index(2))
+==========================================================
+# 5. Different ways to clear a list in Python
+li7 = [1,2,5,3]
+li7.clear()
+print(li7)
+==============================================================
+# 6. Python | Reversing a List
+li8 = [1,2,-4,2,-5,3,28]
+li8.reverse()
+print(li8)
+=======================================================
+# 7. Python program to find sum of elements in list
+li9 = [1,2,3,4]
+print(sum(li9))
+====================================================
+# 8. Python | Multiply all numbers in the list
+li10 = [1,2,3,5]
+print(li10[0] * li10[1] * li10[2] * li10[3])
+=============================================
+# 9. Python program to find smallest number in a list
+li11 = [1,2,3,4,]
+print(min(li11))
+===========================================================================
+# 10. Python program to find largest number in a list
+li12 = [1,4,5,3,55]
+print(max(li12))
+==============================================================================
+# 11. python program to find second largest number in a list
+li13 = [5,10,20,40,30,7,60]
+li13.sort()
+print(li13)
+print(li13[-2])
+============================================================================================
+# 12.Python program to find N largest elements from a list
+li14 = [2,-3,10,30,40,25]
+li14.sort()
+print(li14)
+print(li14[-4:])
+=====================================================================================
+# 13. Python program to print even numbers in a list
+li15 = [2,3,4,5,6,8]
+li16 = []
+for i in li15:
+    if i % 2 == 0:
+        li16.append(i)
+        print(li16)
+=============================================================================================
+
+# 14. Python program to print odd numbers in a List
+li17 = [2,3,5,8,10,12]
+li18 = []
+for x in li17:
+    if x % 2 == 1:
+        li18.append(x)
+        print(li18)
+=======================================================================================================
+# 15.Python program to print all even numbers in a range
+s1 = 4
+e1 = 15
+for i1 in range(s1,e1):
+    if i1 % 2 == 0:
+        print(i1,end=",")
+============================================================================================================================
+# 16. Python program to print all odd numbers in a range
+s2 = 4
+e2 = 15
+for i2 in range(s2-1,e2+1):
+    if i2 % 2 == 1:
+        print(i2)
+====================================================================================================
+# 17.Python program to print positive numbers in a list
+li19 =[2,3,5,-1,-3,-6]
+for pos in li19:
+    if pos > 0:
+        print(pos)
+===============================================================================================================
+# 18.Python program to print negative numbers in a list
+li20 = [-2,-4,4,2,]
+for neg in li20:
+    if neg < 0:
+        print(neg)
+  =======================================================================================================================================
+# 19.Python program to print all positive numbers in a range
+s3 = -8
+e3 = 6
+for positive in range(s3,e3):
+    if positive > 0:
+        print(positive)
+================================================================================================================        
+        
+# 20.Python program to print all negative numbers in a range
+s4 = -10
+e4 = 8
+for negative in range(s4,e4):
+    if negative < 0:
+        print(negative)
+==============================================================================================================
+
+# 21. Remove multiple elements from a list in Python
+li21 = [2,3,4,6]
+li21.remove(2)
+print(list(li21))
+=======================================================================================================================================
+# 22. Python – Remove empty List from List
+
+li22 = [3,4,[],5,[],6,[]]
+print(str(li22))
+li23 = list(filter(None,li22))
+print(list(li23))
+=========================================================================================================
+# 23.Python | Cloning or Copying a list
+li24 = [2,4,6,44,55,7]
+li25 = li24.copy()
+li24[2] = 1000
+print(li24)
+=============================================================================================================
+# 24. Python | Count occurrences of an element in a list
+li26 = [1,2,1,3,4,4,5,6,8,1,1,]
+print(li26.count(1))
+===================================================================================================
+# 25.Python | Remove empty tuples from a list
+li27 = ['hi',(),'python',(),4,5,2,7,()]
+print(str(li27))
+li28 = filter(None,li27)
+print(list(li28))
+==========================================================================================================
+# 26. Python | Program to print duplicates from a list of integers
+li29 = [1,1,1,3,4,4,4,5,6,6,6,6,7,8,9]
+li30 = set(li29)
+print(li30)
+print(list(li30))
+=====================================================================================================================
+# 27.Python program to find Cumulative sum of a list
+li31 = [10, 20, 30, 40, 50]
+li32 = []
+sm = 0
+for i in range(0, len(li31)):
+    sm = sm + li31[i]
+    li32.append(sm)
+print(li32)
+
