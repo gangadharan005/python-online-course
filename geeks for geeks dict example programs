@@ -1,0 +1,40 @@
+# Python – Extract Unique values dictionary values
+d1 = {'gfg': [5, 6, 7, 8],
+      'is': [10, 11, 7, 5],
+      'best': [6, 12, 10, 8],
+      'for': [1, 2, 5]}
+print("The original dictionary is : " + str(d1))
+
+d2 = list(sorted({x for val in d1.values() for x in val}))
+
+print("The unique values list is : " + str(d2))
+=======================================================================================================================
+
+# Python program to find the sum of all items in a dictionary
+
+def sm(d):
+    list = []
+    for i in d:
+        list.append(d[i])
+    final = sum(list)
+
+    return final
+dct = {'hello': 2, 'python': 4,'class': 1}
+print(sm(dct))
+=======================================================================================================
+# Python | Ways to remove a key from dictionary
+d3 = {'hello': 2, 'python': 4,'class': 1}
+d3.pop('class')
+print(d3)
+========================================================================================
+# Python | Merging two Dictionaries
+d4 = {'hello': 2, 'python': 4,'class': 1}
+d5 = {'student': 100}
+d4.update(d5)
+print(d4)
+===============================================================================================
+# Python – Convert key-values list to flat dictionary
+d6 = {'month': [1,2,3],'name':['JAN','FEB','MAR']}
+d7 = str(d6)
+d8 = dict(zip(d6['month'], d6['name']))
+print(str(d8))
