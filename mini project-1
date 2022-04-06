@@ -1,0 +1,87 @@
+import random
+user = int(input("Enter the number:"))
+Li1 = ["rock","paper","scissor"]
+user_wins = 0
+system_wins = 0
+Tie = 0
+for player in range(0,user):
+    while player not in ["rock","paper","scissor"]:
+        player = input("rock,paper,scissor?:").lower()
+    system = random.choice(Li1)
+    print(system)
+    if player == system:
+        print("player:", player)
+        print("system:", system)
+        print("Game Tie")
+        Tie = Tie + 1
+    elif player == "rock":
+        if system == "paper":
+            print("player:", player)
+            print("system:", system)
+            print("paper wins")
+            print("system wins")
+            system_wins += 1
+        if system == "scissor":
+            print("player:", player)
+            print("system:", system)
+            print("rock wins")
+            print("User wins")
+            user_wins += 1
+    elif player == "paper":
+        if system == "rock":
+            print("player:", player)
+            print("system:", system)
+            print("paper wins")
+            print("system wins")
+            system_wins += 1
+        if system == "scissor":
+            print("player:", player)
+            print("system:", system)
+            print("scissor wins")
+            print("User wins")
+            user_wins += 1
+    elif player == "scissor":
+        if system == "paper":
+            print("player:", player)
+            print("system:", system)
+            print("paper wins")
+            print("system wins")
+            system_wins += 1
+        if system == "rock":
+            print("player:", player)
+            print("system:", system)
+            print("rock wins")
+            print("User wins")
+            user_wins += 1
+print("Total of number games:", user)
+print("user points:",user_wins)
+print("system points",system_wins)
+print("game tie:",Tie)
+if user_wins > system_wins:
+    print("user won the game!!!!!Congrats!!!!")
+elif user_wins < system_wins:
+    print("system won the game!!!!!Congrats!!!!")
+else:
+    print("Game tie!!!!Better luck next time!!!")
+  ========================================================================================================================================================
+
+Enter the number:2
+rock,paper,scissor?:rock
+scissor
+player: rock
+system: scissor
+rock wins
+User wins
+rock,paper,scissor?:rock
+paper
+player: rock
+system: paper
+paper wins
+system wins
+Total of number games: 2
+user points: 1
+system points 1
+game tie: 0
+Game tie!!!!Better luck next time!!!
+
+Process finished with exit code 0
