@@ -1,0 +1,84 @@
+Question 1:
+================
+
+collect a list of numbers from user
+eg. [3,4,2,10,12,15,-8]
+
+Find sum of even numbers in the list
+
+
+
+Question 2:
+=================
+
+Collect a number from user, convert it in to binary number, check whether no 0's and 1's are equal or different
+
+
+Question 3:
+=================
+
+Reverse a number (Dont use inbuilt function / string conversion operations )
+
+Input : 122
+Output: 221
+Explanation: By reversing the digits of 
+number, number will change into 221.
+
+
+Question 4:
+======================
+
+Find nth fibonacci number 
+Fibonacci series 0 1 2 3 5 8 13 21 34 55 ....
+
+First fibonacci number starts from 2
+
+Input : 5
+output: 13 
+
+
+Question 5:
+=======================
+
+Collect list of strings from user.
+Arrage it in alphabetical order (without using sort function)
+
+
+Question 6:
+=======================
+
+Print the pattern 
+
+Input: 5
+
+A
+B C
+D E F
+G H I J 
+K L M N O
+
+Input: 3
+A
+B C
+D E F
+
+Question 7:
+
+Collect list of strings from user. (with out in built functions)
+Identify the string with maximum length and minmum length.  
+
+
+Question 8:
+
+collect one sentence from user with space as separator
+
+"god bless you india for next year"
+
+i) "god Bless you India for Next year" alternative wrods caps in first letter
+
+
+Question 9:
+
+"god bless you india for next year"
+
+i) "for god you next year bless india" arrange with length if lenght matches arrange it in alphabetical manner
